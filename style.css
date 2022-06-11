@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Red);
+  background-image: url("images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+  height: 100vh;
+}
+
+.left-side h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 2.3rem;
+}
+
+.left-side p {
+  font-weight: 400;
+  width: 30rem;
+}
+
+.right-side {
+  color: #fff;
+}
+
+.right-side .head {
+  background-color: var(--Blue);
+  font-size: 1rem;
+  font-weight: 400;
+  box-shadow: 0 5px 0 0 hsl(249deg 10% 26% / 24%);
+}
+
+.right-side .head span {
+  font-weight: 600;
+}
+
+.right-side form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  position: relative;
+}
+
+.right-side form input {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border: 2px solid var(--Grayish-Blue);
+}
+
+.right-side form input.error {
+  border: 2px solid var(--Red);
+}
+
+.right-side form .icon {
+  width: 20px;
+  position: absolute;
+}
+
+.right-side form .erroricon-1 {
+  right: 10%;
+  top: 8.5%;
+}
+.right-side form .erroricon-2 {
+  right: 10%;
+  top: 26%;
+}
+.right-side form .erroricon-3 {
+  right: 10%;
+  top: 43%;
+}
+.right-side form .erroricon-4 {
+  right: 10%;
+  top: 60.3%;
+}
+
+.right-side form input.error::placeholder {
+  color: var(--Red);
+}
+
+.right-side form input:focus {
+  border: 2px solid var(--Blue);
+  outline: none;
+  box-shadow: none;
+}
+
+.right-side form p {
+  color: var(--Red);
+  text-align: end;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right-side form button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: var(--Green);
+  color: #fff;
+  box-shadow: 0 5px 0 0 hsl(154deg 100% 35%);
+}
+
+.right-side form .terms {
+  padding: 1rem;
+  color: var(--Grayish-Blue);
+  font-size: 14px;
+}
+
+.right-side form .terms a {
+  color: var(--Red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .left-side h1 {
+    font-size: 40px;
+  }
+  .left-side p {
+    width: 20rem;
+  }
+  .right-side form .erroricon-1 {
+    right: 13%;
+    top: 8%;
+  }
+  .right-side form .erroricon-2 {
+    right: 13%;
+    top: 25%;
+  }
+  .right-side form .erroricon-3 {
+    right: 13%;
+    top: 41.5%;
+  }
+  .right-side form .erroricon-4 {
+    right: 13%;
+    top: 58.3%;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .left-side p {
+    width: 100%;
+  }
+}
+
+@media (width: 280px) {
+  .left-side h1 {
+    font-size: 30px;
+  }
+  .left-side p {
+    width: 16rem;
+  }
+  .right-side form .erroricon-1 {
+    right: 16%;
+    top: 7%;
+  }
+  .right-side form .erroricon-2 {
+    right: 16%;
+    top: 24%;
+  }
+  .right-side form .erroricon-3 {
+    right: 16%;
+    top: 41.5%;
+  }
+  .right-side form .erroricon-4 {
+    right: 16%;
+    top: 59%;
+  }
+}

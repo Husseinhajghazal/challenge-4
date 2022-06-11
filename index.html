@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="normalize.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-md-6 col-sm-12 left-side text-white">
+        <h1>Learn to code by <br> watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="col-md-6 col-sm-12 right-side">
+        <p class="text-center head rounded-3 p-3 mb-4"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <form class="d-flex flex-column g-5">
+          <input type="text" placeholder="First Name" class="" id="firstN">
+          <img src="images/icon-error.svg" alt="error-icon" class="erroricon-1 icon d-none">
+          <p class="d-none par">First Name cannot be empty</p>
+          <input type="text" placeholder="Last Name" class="" id="lastN">
+          <img src="images/icon-error.svg" alt="error-icon" class="erroricon-2 icon d-none">
+          <p class="d-none par">Last Name cannot be empty</p>
+          <input type="email" placeholder="Email Address" class="" id="email">
+          <img src="images/icon-error.svg" alt="error-icon" class="erroricon-3 icon d-none">
+          <p class="d-none par">Looks like this is not an email</p>
+          <input type="password" placeholder="Password" class="" id="password">
+          <img src="images/icon-error.svg" alt="error-icon" class="erroricon-4 icon d-none">
+          <p class="d-none par">Password cannot be empty</p>
+          <button id="btn">Claim your free trial</button>
+          <p class="text-center terms">By clicking the button, you are agreeing to our <a href="#">Terms and
+              Services</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
